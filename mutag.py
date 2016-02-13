@@ -14,8 +14,8 @@ import mutagen.easymp4
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-f', '--no-backup', dest='backup',
-                        action='store_false')
+    parser.add_argument('-b', '--backup', dest='backup',
+                        action='store_true')
     parser.add_argument('filename')
     args = parser.parse_args()
 
